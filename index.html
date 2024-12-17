@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #d8f3dc; /* Warna latar belakang */
+      color: #333; /* Warna teks */
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #38a3a5; /* Warna teks judul */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #maze-container {
+      margin: 20px auto;
+    }
+
+    #controls {
+      margin-top: 10px;
+    }
+
+    button {
+      background: #38a3a5;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #57cc99;
+    }
+
+    input {
+      padding: 5px;
+      font-size: 1em;
+      border: 1px solid #38a3a5;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Judul "Labirin Game" -->
+  <h1>Labirin Game</h1>
+
+  <!-- Kontainer Labirin -->
+  <div id="maze-container"></div>
+
+  <!-- Kontrol Tombol -->
+  <div id="controls">
+    <label for="size">Maze Size:</label>
+    <input type="number" id="size" value="21" min="5" max="51" step="2">
+    <button id="generate">Generate Maze</button>
+    <button id="solve">Show Solution</button>
+  </div>
+
+  <!-- Pastikan JavaScript diload di akhir untuk performa lebih baik -->
+  <script src="script.js"></script>
+
+</body>
+</html>
